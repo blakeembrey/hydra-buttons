@@ -1,0 +1,7 @@
+{
+  "name": "style-buttons",
+  "main": ["./buttons.css"],
+  "dependencies": {
+    "stylus-type-utils": "latest"
+  }
+}
