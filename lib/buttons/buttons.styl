@@ -1,7 +1,7 @@
 @import "functions"
 @import "../../components/stylus-type-utils"
 
-.btn
+.{buttons-class-name}
 	display: inline-block
 	position: relative
 	padding: 0.25em 0.8em
@@ -43,22 +43,22 @@
 		box-shadow: @box-shadow // For browsers that don't support `pointer-events`
 		// pointer-events: none
 	// Remove gradients for flatter buttons
-	&.btn-quiet,
-	&.btn-quiet:hover,
-	&.btn-quiet.disabled,
-	&.btn-quiet[disabled],
-	&.btn-quiet.disabled:hover,
-	&.btn-quiet[disabled]:hover,
-	&.btn-quiet.disabled:active,
-	&.btn-quiet[disabled]:active,
-	fieldset[disabled] &.btn-quiet
+	&.{buttons-class-name}-quiet,
+	&.{buttons-class-name}-quiet:hover,
+	&.{buttons-class-name}-quiet.disabled,
+	&.{buttons-class-name}-quiet[disabled],
+	&.{buttons-class-name}-quiet.disabled:hover,
+	&.{buttons-class-name}-quiet[disabled]:hover,
+	&.{buttons-class-name}-quiet.disabled:active,
+	&.{buttons-class-name}-quiet[disabled]:active,
+	fieldset[disabled] &.{buttons-class-name}-quiet
 		background-image: none
 	// Add rounded button support
-	&.btn-pill
+	&.{buttons-class-name}-pill
 		border-radius: 9em
 
 // Cross-browser CSS support - thanks to normalize.css
-.btn
+.{buttons-class-name}
 	margin: 0 // Address margins set differently in Firefox 4+, Safari 5, and Chrome
 	font-size: 100% // Correct font size not being inherited in all browsers
 	font-family: inherit // Correct font family not being inherited in all browsers
@@ -73,11 +73,11 @@
 // Button Sizes
 // --------------------------------------------------
 
-.btn-mini
+.{buttons-class-name}-mini
 	font-size: rem(base-font-size * 0.7)
-.btn-small
+.{buttons-class-name}-small
 	font-size: rem(base-font-size * 0.85)
-.btn-large
+.{buttons-class-name}-large
 	font-size: rem(base-font-size * 1.15)
 
 
@@ -85,23 +85,23 @@
 // Alternate buttons
 // --------------------------------------------------
 
-.btn-primary
-	@extend .btn
+.{buttons-class-name}-primary
+	@extend .{buttons-class-name}
 	buttons-generate(buttons-primary-background, buttons-primary-background-highlight)
-.btn-info
-	@extend .btn
+.{buttons-class-name}-info
+	@extend .{buttons-class-name}
 	buttons-generate(buttons-info-background, buttons-info-background-highlight)
-.btn-success
-	@extend .btn
+.{buttons-class-name}-success
+	@extend .{buttons-class-name}
 	buttons-generate(buttons-success-background, buttons-success-background-highlight)
-.btn-warning
-	@extend .btn
+.{buttons-class-name}-warning
+	@extend .{buttons-class-name}
 	buttons-generate(buttons-warning-background, buttons-warning-background-highlight)
-.btn-danger
-	@extend .btn
+.{buttons-class-name}-danger
+	@extend .{buttons-class-name}
 	buttons-generate(buttons-danger-background, buttons-danger-background-highlight)
-.btn-inverse
-	@extend .btn
+.{buttons-class-name}-inverse
+	@extend .{buttons-class-name}
 	buttons-generate(buttons-inverse-background, buttons-inverse-background-highlight)
 
 
@@ -109,8 +109,8 @@
 // Block button
 // -------------------------
 
-.btn-block
+.{buttons-class-name}-block
 	width: 100%
 	// Vertically space out any buttons after a block button
-	+ .btn
+	+ .{buttons-class-name}
 		margin-top: em(base-line-height)
