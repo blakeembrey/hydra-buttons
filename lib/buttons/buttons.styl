@@ -6,9 +6,8 @@
 	position: relative
 	padding: 0.25em 0.8em
 	border: 1px solid rgba(0, 0, 0, 0.3)
-	border-radius: base-border-radius
+	border-radius: buttons-border-radius
 	text-align: center
-	line-height: base-line-height
 	text-decoration: none
 	text-rendering: optimizeLegibility
 	-webkit-font-smoothing: antialiased
@@ -18,7 +17,7 @@
 	vertical-align: middle
 	// Using some crap height calculations here to get consistent cross browser styles
 	box-sizing: border-box
-	line-height: base-line-height
+	line-height: buttons-line-height
 	height: em(@line-height) + em(@padding[0] * 2) + em(@border[0] * 2)
 	buttons-generate(buttons-background, buttons-background-highlight, #454545, 0 1px 0 #eee)
 	// Remove text-decoration for links
@@ -62,7 +61,6 @@
 	margin: 0 // Address margins set differently in Firefox 4+, Safari 5, and Chrome
 	font-size: 100% // Correct font size not being inherited in all browsers
 	font-family: inherit // Correct font family not being inherited in all browsers
-	// line-height: normal // Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet
 	text-transform: none // Address inconsistent `text-transform` inheritance for `button`
 	// Remove inner padding and border in Firefox 4+
 	&::-moz-focus-inner
@@ -74,11 +72,11 @@
 // --------------------------------------------------
 
 .{buttons-class-name}-mini
-	font-size: rem(base-font-size * 0.7)
+	font-size: 70%
 .{buttons-class-name}-small
-	font-size: rem(base-font-size * 0.85)
+	font-size: 85%
 .{buttons-class-name}-large
-	font-size: rem(base-font-size * 1.15)
+	font-size: 115%
 
 
 
