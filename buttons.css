@@ -149,22 +149,6 @@ fieldset[disabled] .btn-inverse,
   background-color: #e3e5e5;
   background-image: none;
 }
-.btn:focus,
-.btn-primary:focus,
-.btn-info:focus,
-.btn-success:focus,
-.btn-warning:focus,
-.btn-danger:focus,
-.btn-inverse:focus,
-.btn.focused,
-.btn-primary.focused,
-.btn-info.focused,
-.btn-success.focused,
-.btn-warning.focused,
-.btn-danger.focused,
-.btn-inverse.focused {
-  border-color: #0a0705;
-}
 .btn:hover,
 .btn-primary:hover,
 .btn-info:hover,
@@ -204,15 +188,11 @@ fieldset[disabled] .btn-inverse,
 .btn-success:focus,
 .btn-warning:focus,
 .btn-danger:focus,
-.btn-inverse:focus,
-.btn.focused,
-.btn-primary.focused,
-.btn-info.focused,
-.btn-success.focused,
-.btn-warning.focused,
-.btn-danger.focused,
-.btn-inverse.focused {
+.btn-inverse:focus {
   outline: 0;
+  border-color: #000;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
 }
 .btn.disabled,
 .btn-primary.disabled,
@@ -384,10 +364,6 @@ fieldset[disabled] .btn-primary {
   background-color: #007ab8;
   background-image: none;
 }
-.btn-primary:focus,
-.btn-primary.focused {
-  border-color: #f73;
-}
 .btn-info,
 .btn-info.disabled,
 .btn-info[disabled],
@@ -423,10 +399,6 @@ fieldset[disabled] .btn-info {
   color: #fdfdfd;
   background-color: #2f96b4;
   background-image: none;
-}
-.btn-info:focus,
-.btn-info.focused {
-  border-color: #a43f21;
 }
 .btn-success,
 .btn-success.disabled,
@@ -464,10 +436,6 @@ fieldset[disabled] .btn-success {
   background-color: #51a351;
   background-image: none;
 }
-.btn-success:focus,
-.btn-success.focused {
-  border-color: #9d3b9d;
-}
 .btn-warning,
 .btn-warning.disabled,
 .btn-warning[disabled],
@@ -503,10 +471,6 @@ fieldset[disabled] .btn-warning {
   color: #fdfdfd;
   background-color: #f89406;
   background-image: none;
-}
-.btn-warning:focus,
-.btn-warning.focused {
-  border-color: #055bd4;
 }
 .btn-danger,
 .btn-danger.disabled,
@@ -544,10 +508,6 @@ fieldset[disabled] .btn-danger {
   background-color: #bd362f;
   background-image: none;
 }
-.btn-danger:focus,
-.btn-danger.focused {
-  border-color: #11a0a4;
-}
 .btn-inverse,
 .btn-inverse.disabled,
 .btn-inverse[disabled],
@@ -583,10 +543,6 @@ fieldset[disabled] .btn-inverse {
   color: #fdfdfd;
   background-color: #5f6060;
   background-image: none;
-}
-.btn-inverse:focus,
-.btn-inverse.focused {
-  border-color: #858383;
 }
 .btn-block {
   width: 100%;
