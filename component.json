@@ -1,5 +1,6 @@
 {
   "name": "style-buttons",
+  "version": "0.0.3",
   "main": ["./buttons.css"],
   "dependencies": {
     "stylus-type-utils": "latest"
