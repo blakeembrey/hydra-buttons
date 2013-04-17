@@ -19,7 +19,7 @@
   -moz-box-sizing: border-box
   box-sizing: border-box
   line-height: buttons-line-height
-  height: em(@line-height) + em(@padding[0] * 2) + em(@border[0] * 2)
+  min-height: em(@line-height) + em(@padding[0] * 2) + em(@border[0] * 2)
   buttons-generate(buttons-background, buttons-background-highlight, #454545, 0 1px 0 #eee)
   // Remove text-decoration for links
   &:hover,
