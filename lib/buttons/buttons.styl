@@ -16,7 +16,7 @@
   cursor: pointer
   user-select: none
   vertical-align: middle
-  height: em(px(@line-height + @padding[0] * 2) + @border[0] * 2)
+  height: ((em(base-font-size) * em(@line-height)) + em(@padding[0] * 2) + em(@border[0] * 2))
   -moz-box-sizing: border-box
   box-sizing: border-box
   buttons-helper(buttons-background)
