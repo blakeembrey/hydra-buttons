@@ -1,5 +1,7 @@
 # Hydra Buttons
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/blakeembrey/hydra-buttons.svg)](https://greenkeeper.io/)
+
 Beautiful and consistent cross-browser CSS buttons. Supports multiple colored versions, as well as disabled, focus, hover and active states. Even includes a `quiet` state (no gradients) and a `pill` state (rounded corners).
 
 ## Installation
